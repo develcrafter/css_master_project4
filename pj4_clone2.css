@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,700');
+
+
+:root {
+    --graycolor: rgba(0,0,0,0.5);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, span, div {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    padding: 0 15px;
+}
+
+.header {
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__title {
+    margin-bottom: 10px;
+}
+
+.header__subtitle {
+    font-size: 0.9rem;
+    color: var(--graycolor);
+}
+
+.header__icons .header__icon svg{
+    fill: var(--graycolor);
+    width: 22px;
+}
+
+.header__icon:first-child {
+    margin-right: 15px;
+}
+
+.main {
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.food {
+    background-image: url(https://i.pinimg.com/564x/29/ab/03/29ab03def625812ee652b3f27dff028a.jpg);
+    background-size: cover;
+
+    height: 40vh;
+    border-radius: 20px;
+
+    position: relative;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.food__heart {
+    position: absolute;
+
+    width: 40px;
+    height: 40px;
+
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    top: 20px;
+    right: 20px;
+
+    border-radius: 50%;
+}
+
+.food__heart svg {
+    fill: #E91E63;
+    width: 22px;
+}
+
+.food__info {
+    background-color: white;
+
+    width: 90%;
+    border-radius: 20px;
+
+    padding: 10px 15px;
+
+    position: relative;
+    top: 45px;
+
+    box-shadow: 0 5px 13px rgba(50,50,93,.11), 0 4px 9px rgba(0,0,0,.08);
+    
+}
+
+.food__info .food__title {
+    padding-bottom: 7px;
+}
+
+.food__info .food__meta {
+    font-size: 14px;
+    color: var(--graycolor);
+
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid var(--graycolor);
+}
+
+.food__info .food__social {
+    margin-top: 10px;
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+    justify-items: center;
+}
+
+.food__social .food__social-item {
+    display: flex;
+    align-items: center;
+}
+
+.food__social-item svg {
+    margin-right: 8px;
+}
+
+.food__social-item.svg-star svg {
+    fill: #FEEA3B;
+}
+
+.recommended__header {
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.recommended__header .recommended__small {
+    color: var(--graycolor);
+}
+
+.recommended__grid {
+    overflow: scroll;
+
+    display: grid;
+    grid-auto-flow: column;
+    /* grid-template-columns: minmax(21vh, 1fr); */
+    grid-auto-columns: minmax(21vh, 1fr);
+
+    grid-gap: 20px;
+
+    padding-bottom: 20px;
+    padding-left: 3px;
+}
+
+.recommended-food {
+    background-color: #FEEA3B;
+    height: 19vh;
+
+    border-radius: 15px;
+    display: flex;
+    align-items: flex-end;
+
+    box-shadow: 0 5px 4px rgba(50,50,93,.11), 0 3px 5px rgba(0,0,0,.08);
+
+    overflow: hidden;
+}
+
+.recommended-food:first-child{
+    background-image: url(https://i.pinimg.com/564x/24/87/d4/2487d4a1c840486e77f2f4f45a39d4dc.jpg);
+    background-size: cover;
+    background-position-y: -10px;
+}
+
+.recommended-food:nth-child(2) {
+    background-image: url(https://i.pinimg.com/564x/9e/e7/73/9ee77347e3b0459bf8857b128cda2830.jpg);
+    background-size: cover;
+    background-position-y: -13px;
+
+}
+
+.recommended-food:nth-child(3) {
+    background-image: url(https://i.pinimg.com/564x/29/a1/bc/29a1bcfbaed1e692b06f79cd456464dc.jpg);
+    background-size: cover;
+    background-position-y: -18px;
+}
+
+.recommended-food:nth-child(4) {
+    background-image: url(https://i.pinimg.com/564x/28/06/44/280644897aee9166069785dbd7ec050a.jpg);
+    background-size: cover;
+    background-position-y: -40px;
+}
+
+.recommended-food:nth-child(5) {
+    background-image: url(https://i.pinimg.com/564x/76/2f/77/762f7756e2b990a7df519a7fad2151f7.jpg);
+    background-size: cover;
+    background-position-y: -20px;
+}
+
+.recommended__info {
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+}
+
+.recommended-food__title {
+    font-size: 10px;
+}
+
+.recommended-food__text {
+    font-size: 8px;
+}
