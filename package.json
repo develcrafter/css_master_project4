@@ -15,14 +15,14 @@
   },
   "homepage": "https://github.com/develcrafter/css_master_project4#readme",
   "scripts": {
-    "start": "parcel pj4_clone1.html"
+    "start": "parcel pj4_clone2.html"
   },
   "dependencies": {
     "postcss-preset-env": "^6.4.0"
   },
-  "postcss" :{
-    "plugins" :{
-      "postcss-preset-env" :{
+  "postcss": {
+    "plugins": {
+      "postcss-preset-env": {
         "stage": 0
       }
     }
